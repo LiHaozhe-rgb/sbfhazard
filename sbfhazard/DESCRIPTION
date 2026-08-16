@@ -1,0 +1,27 @@
+Package: sbfhazard
+Title: Smooth Backfitting for Additive and Multiplicative Hazard Models
+Version: 0.0.1
+Authors@R: person("Haozhe", "Li", role = c("aut", "cre"), email = "236228545+LiHaozhe-rgb@users.noreply.github.com")
+Author: Haozhe Li [aut, cre]
+Maintainer: Haozhe Li <236228545+LiHaozhe-rgb@users.noreply.github.com>
+Description: Alpha implementation of smooth backfitting estimators for additive
+    and multiplicative hazard models, including SBF estimators, binning-based
+    approximations, and basic prediction utilities.
+License: MIT + file LICENSE
+URL: https://github.com/LiHaozhe-rgb/sbfhazard
+BugReports: https://github.com/LiHaozhe-rgb/sbfhazard/issues
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends:
+    R (>= 4.1.0)
+Imports:
+    prodlim,
+    stats,
+    utils,
+    survival
+Suggests:
+    MASS,
+    VGAM,
+    testthat
+Config/testthat/edition: 3
+Config/roxygen2/version: 8.0.0

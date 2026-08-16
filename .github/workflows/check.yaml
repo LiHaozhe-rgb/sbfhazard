@@ -1,0 +1,22 @@
+name: R checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          working-directory: sbfhazard
+          extra-packages: |
+            any::devtools
+            any::rcmdcheck
+      - name: Check package
+        run: R CMD check --no-manual sbfhazard
+      - name: Run experiment smoke tests
+        run: Rscript experiments/tests/run_smoke_suite.R

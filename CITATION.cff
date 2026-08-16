@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "sbfhazard"
+type: software
+authors:
+  - family-names: Li
+    given-names: Haozhe
+repository-code: "https://github.com/LiHaozhe-rgb/sbfhazard"
+version: 0.0.1
+date-released: 2026-07-21
+license: MIT
